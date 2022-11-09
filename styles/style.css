@@ -255,21 +255,31 @@ ul {
     width: 24%;
 }
 
-.texts-container {
+.texts-main {
     display: flex;
     justify-content: center;
 }
 
-.texts-container .limit-width {
+.texts-main .limit-width {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing);
+    padding: var(--spacing);
+}
+
+.texts-main h2 {
+    width: 100%;
+}
+
+.texts-container {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: var(--spacing);
-    padding: var(--spacing);
     align-items: flex-start;
 }
-
 
 /* PHOTOS PAGE */
 .photo-container {
