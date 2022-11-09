@@ -269,3 +269,36 @@ ul {
     padding: var(--spacing);
     align-items: flex-start;
 }
+
+
+/* PHOTOS PAGE */
+.photo-container {
+    display: flex;
+    justify-content: center;
+}
+
+.photo-container .limit-width {
+    flex-direction: column;
+    padding: var(--spacing);
+    gap: var(--spacing);
+}
+
+.photo-container .limit-width h2 {
+    align-self: stretch;
+}
+
+
+.photo-container .photos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.photo-container .photo-column{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+.photo-container .photos img {
+    width: 100%;
+}
