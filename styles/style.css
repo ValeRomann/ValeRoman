@@ -5,7 +5,9 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
+ul {
+    list-style-type: none;
+}
 
 /* DARK BACKGROUND COLOR (HERO AND FOOTER */
 .header,
@@ -24,9 +26,29 @@
     color: #f9faf8;
 }
 
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 36px;
+    position: fixed;
+    width: 100%;
+}
+
+
+.header nav {
+    width: 50%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.nav li {
+    display: inline;
+}
 
 /* HERO MAIN TEXT AND SECONDARY TEXT */
 .info {
+    padding-top: 68px;
     background-color: #2a3340;
     color: #f9faf8;
 }
@@ -49,9 +71,6 @@
     color: #1f2937;
 }
 
-ul {
-    list-style-type: none;
-}
 
 .cover {
     display: flex;
