@@ -309,9 +309,10 @@ ul {
     display: flex;
     flex-direction: column;
     width: 300px;
-    min-width: 25%;
 }
 
 .photo-container .photos img {
     width: 100%;
+    height: 300px;
+    object-fit: cover;
 }
