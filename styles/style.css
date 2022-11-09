@@ -144,14 +144,28 @@ ul {
 
 /* QUOTE SECTION */
 
-.quote-section {
+.quote-container {
     background-color: #e5e7eb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 33vh;
 }
 
+.limit-width {
+    max-width: 1200px;
+    padding: var(--spacing);
+}
 
-.quote-section .quote {
+.quote-container .quote {
+    text-align: center;
     font-size: 36px;
     color: #1f2937;
+    margin-bottom: 10px;
+}
+
+.quote-container .author {
+    text-align: right;
 }
 
 /* BUTTON COLOR ACTION */
