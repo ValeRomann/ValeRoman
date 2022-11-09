@@ -23,6 +23,9 @@ ul {
 
 .limit-width {
     max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* DARK BACKGROUND COLOR (HERO AND FOOTER */
@@ -51,9 +54,7 @@ ul {
 }
 
 .header .limit-width{
-    display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: var(--spacing) 36px;
     width: 100%;
 }
@@ -83,9 +84,7 @@ ul {
 .info .limit-width{
     padding: calc(var(--spacing) * 3 + 28px) var(--spacing) 40px;
     color: #f9faf8;
-    display: flex;
     justify-content: space-between;
-    align-items: center;
     gap: 20px;
 }
 
@@ -97,6 +96,10 @@ ul {
 .secondary-text {
     font-size: 18px;
     color: #e5e7eb;
+}
+
+.info.lyric-page img {
+    max-width: 320px;
 }
 
 .info img {
@@ -169,6 +172,11 @@ ul {
     padding: var(--spacing);
 }
 
+.quote-container .limit-width {
+    flex-direction: column;
+    align-items: stretch;
+}
+
 .quote-container .quote {
     text-align: center;
     font-size: 36px;
@@ -213,6 +221,7 @@ ul {
     min-width: 50%;
     align-items: center;
     border-radius: 8px;
+    gap: var(--spacing);
 }
 
 .footer {
@@ -231,4 +240,32 @@ ul {
 .footer ul {
     display: flex;
     gap:8px;
+}
+
+
+/* LYRICS PAGE */
+
+.promos {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.promos img {
+    width: 24%;
+}
+
+.texts-container {
+    display: flex;
+    justify-content: center;
+}
+
+.texts-container .limit-width {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: var(--spacing);
+    padding: var(--spacing);
+    align-items: flex-start;
 }
