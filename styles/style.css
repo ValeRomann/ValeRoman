@@ -275,11 +275,11 @@ ul {
 .photo-container {
     display: flex;
     justify-content: center;
+    padding: calc(var(--spacing) * 3 + 28px) var(--spacing) var(--spacing);
 }
 
 .photo-container .limit-width {
     flex-direction: column;
-    padding: var(--spacing);
     gap: var(--spacing);
 }
 
