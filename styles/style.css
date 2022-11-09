@@ -1,5 +1,5 @@
 :root {
-    --spacing: 36px;
+    --spacing: 32px;
 }
 
 * {
@@ -173,4 +173,32 @@ ul {
 .subscribe-container button {
     background-color: #3882f6;
     color: #e5e7eb;
+    padding: 12px var(--spacing);
+    border-radius: 8px;
+    border: 2px solid #e5e7eb;
+    cursor: pointer;
+}
+
+.subscribe-container button:active {
+    border: 2px solid #e0e2e7;
+    background-color: #3677f1;
+}
+
+.subscribe-container {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #e5e7eb;
+    padding: var(--spacing);
+}
+
+.subscribe-card {
+    padding: var(--spacing);
+    background-color: #3882f6;
+    display: flex;
+    justify-content: space-between;
+    min-width: 50%;
+    align-items: center;
+    border-radius: 8px;
 }
