@@ -18,6 +18,7 @@ ul {
 
 .music {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .music .cover {
@@ -32,4 +33,37 @@ ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+/* DARK BACKGROUND COLOR (HERO AND FOOTER */
+.header,
+.footer {
+    background-color: #1f2937;
+}
+
+/* HEADER LOGO TEXT */
+.logo {
+    font-size: 24px;
+}
+
+.header,
+.header a,
+.footer {
+    color: #f9faf8;
+}
+
+
+/* HERO MAIN TEXT AND SECONDARY TEXT */
+.info {
+    background-color: #2a3340;
+    color: #f9faf8;
+}
+
+.main-text {
+    font-size: 48px;
+}
+
+.secondary-text {
+    font-size: 18px;
+    color: #e5e7eb;
 }
