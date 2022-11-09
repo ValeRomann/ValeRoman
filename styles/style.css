@@ -21,7 +21,12 @@ ul {
     list-style-type: none;
 }
 
+.limit-width {
+    max-width: 1200px;
+}
+
 /* DARK BACKGROUND COLOR (HERO AND FOOTER */
+
 .header,
 .footer {
     background-color: #1f2937;
@@ -40,10 +45,16 @@ ul {
 
 .header {
     display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+}
+
+.header .limit-width{
+    display: flex;
     justify-content: space-between;
     align-items: center;
     padding: var(--spacing) 36px;
-    position: fixed;
     width: 100%;
 }
 
@@ -52,20 +63,25 @@ ul {
 }
 
 
-.header nav {
-    width: 50%;
+.header .nav {
     display: flex;
-    flex-wrap: nowrap;
+    gap: var(--spacing);
 }
 
 .nav li {
-    display: inline;
+    display: inline-block;
 }
 
 /* HERO MAIN TEXT AND SECONDARY TEXT */
+
 .info {
-    padding: calc(var(--spacing) * 3 + 28px) var(--spacing) 40px;
     background-color: #2a3340;
+    display: flex;
+    justify-content: center;
+}
+
+.info .limit-width{
+    padding: calc(var(--spacing) * 3 + 28px) var(--spacing) 40px;
     color: #f9faf8;
     display: flex;
     justify-content: space-between;
@@ -150,10 +166,6 @@ ul {
     justify-content: center;
     align-items: center;
     min-height: 33vh;
-}
-
-.limit-width {
-    max-width: 1200px;
     padding: var(--spacing);
 }
 
