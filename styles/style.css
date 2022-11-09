@@ -1,3 +1,7 @@
+:root {
+    --spacing: 36px;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -30,7 +34,7 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 36px;
+    padding: var(--spacing) 36px;
     position: fixed;
     width: 100%;
 }
@@ -48,13 +52,21 @@ ul {
 
 /* HERO MAIN TEXT AND SECONDARY TEXT */
 .info {
-    padding-top: 68px;
+    padding: calc(var(--spacing) * 3 + 28px) var(--spacing) 40px;
     background-color: #2a3340;
     color: #f9faf8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.info-text {
 }
 
 .main-text {
     font-size: 48px;
+    margin-bottom: 16px;
 }
 
 .secondary-text {
@@ -62,8 +74,13 @@ ul {
     color: #e5e7eb;
 }
 
+.info img {
+    max-width: 640px;
+    width: 50%;
+}
 
-/* INFORMATION HEADER TEXT */
+
+/* INFORMATION TEXT */
 
 .music-section h2 {
     font-size: 36px;
